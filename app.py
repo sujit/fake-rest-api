@@ -31,7 +31,7 @@ async def get_random_data(query: str):
     for i, column_name in enumerate(column_names):
         random_values[column_name] = random_row[i]
 
-    # Add the IP address to the response data
+    # Add the raw client query to the response data
     random_values['query'] = query
 
     return random_values
