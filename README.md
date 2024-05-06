@@ -9,7 +9,7 @@ fake -f csv -n 10000 pyint,user_name,mac_address,job,company,ssn | sponge input.
 ```
 
 
-## Run server in the background (after remote ssh terminal exit)
+## Run server in the background
 
 ```bash
 nohup python app.py > nohup.out 2>&1 &
