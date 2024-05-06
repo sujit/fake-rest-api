@@ -2,7 +2,6 @@ import csv
 import random
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-import uvicorn
 
 
 app = FastAPI()
