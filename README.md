@@ -15,7 +15,7 @@ fake -f csv -n 10000 pyint,user_name,mac_address | sponge input.csv
 nohup python app.py > nohup.out 2>&1 &
 ```
 
-## Fake data genetion tools
+## Fake data generators
 
 * [faker-cli (Python)](https://github.com/dacort/faker-cli/tree/main)
 * [fakedata - Standalone binary](https://github.com/lucapette/fakedata)
