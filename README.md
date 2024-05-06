@@ -7,7 +7,7 @@ Generate a few fake CSV entries and run a REST API against the generated data.
 -----------------
 
 ```sh
-fake -f csv -n 10000 pyint,user_name,mac_address,job,company,ssn > input.csv
+fake -f csv -n 10000 pyint,user_name,mac_address,job,company,ssn > data.csv
 ```
 
 
@@ -15,7 +15,8 @@ fake -f csv -n 10000 pyint,user_name,mac_address,job,company,ssn > input.csv
 -----------------
 
 ```bash
-nohup python app.py > nohup.out 2>&1 &
+# nohup python app.py > nohup.out 2>&1 &
+nohup python app.py -f data.csv -t json > nohup.out 2>&1 &
 ```
 
 ### Test API
