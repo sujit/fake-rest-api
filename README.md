@@ -19,3 +19,4 @@ nohup python app.py > nohup.out 2>&1 &
 
 * [faker-cli (Python)](https://github.com/dacort/faker-cli/tree/main)
 * [fakedata - Standalone binary](https://github.com/lucapette/fakedata)
+* [Faker (Python - quite popular)](https://github.com/joke2k/faker)
