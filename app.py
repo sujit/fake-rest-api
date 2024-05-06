@@ -52,7 +52,8 @@ async def get_random_data(query: str, response_type: str = "JSON"):
         random_row.append(query)
         # Convert the random row to a comma-separated string
         csv_string = ','.join(random_row)
-        return Response(content=csv_string, media_type="text/csv")
+        # Create a Response object with the CSV content and plain text media type
+        return Response(content=csv_string, media_type="text/plain")
     else:
         raise HTTPException(status_code=400, detail="Invalid response type. Supported types: JSON, CSV")
 
