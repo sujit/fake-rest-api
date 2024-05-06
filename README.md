@@ -1,15 +1,16 @@
-# fake-rest-api
+# Fake REST API Runner
+
 Generate fake CSV and run a REST API for data rendering
 
 
-## Generate 10K fake (CSV) entries
+### Generate 10K fake (CSV) entries
 
 ```sh
 fake -f csv -n 10000 pyint,user_name,mac_address,job,company,ssn | sponge input.csv
 ```
 
 
-## Run server indefinitely
+### Run server indefinitely
 
 ```bash
 nohup python app.py > nohup.out 2>&1 &
