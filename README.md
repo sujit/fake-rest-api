@@ -18,6 +18,15 @@ fake -f csv -n 10000 pyint,user_name,mac_address,job,company,ssn > input.csv
 nohup python app.py > nohup.out 2>&1 &
 ```
 
+### Test API
+-----------------
+
+```bash
+curl http://<ip>:8080/random/test
+curl http://<ip>:8080/random/junk
+```
+
+
 ## References
 
 * [faker-cli (Python)](https://github.com/dacort/faker-cli/tree/main)
