@@ -5,7 +5,7 @@ Generate fake CSV and run a REST API for data rendering
 ## Generate 10K fake (CSV) entries
 
 ```sh
-fake -f csv -n 10000 pyint,user_name,mac_address | sponge input.csv
+fake -f csv -n 10000 pyint,user_name,mac_address,job,company,ssn | sponge input.csv
 ```
 
 
