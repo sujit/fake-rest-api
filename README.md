@@ -7,7 +7,7 @@ Generate a few fake CSV entries and run a REST API against the generated data.
 -----------------
 
 ```sh
-fake -f csv -n 10000 pyint,user_name,mac_address,job,company,ssn | sponge input.csv
+fake -f csv -n 10000 pyint,user_name,mac_address,job,company,ssn > input.csv
 ```
 
 
