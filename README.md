@@ -11,7 +11,7 @@ fake -f csv -n 10000 pyint,user_name,mac_address,job,company,ssn > data.csv
 ```
 
 
-### Run server indefinitely
+### Run server
 -----------------
 
 ```bash
